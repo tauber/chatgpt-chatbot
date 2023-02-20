@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>ChatBot Trials</title>
+
+    <link rel="icon" type="image/png" href="/chatbot/img/favicon.png">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src='openai/chatweb.js'></script>
+</head>
+
+<body>
+    <div class="diagnostic_windows" style="displaya: none;">
+        <div id="window1"></div>
+        <div id="window2"></div>
+        <div id="window3"></div>
+    </div>
+    <div class="chatwindow">
+        <div class="messages">
+            <div class="agenttext">
+                Hello. How may I be of assistance? <br/>
+                Please tell me.
+                <br/>
+            </div>
+        </div>
+
+        <form class="usertext" method="post">
+            <textarea placeholder="Please type your query here." type="textbox" id="mymsg" name="mymsg"></textarea>
+            <input type="submit" value="">              
+        </form>
+    </div>
+</body>
+</html>

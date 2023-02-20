@@ -1,0 +1,109 @@
+.chatwindow {
+    width: 300px;
+    float: right;
+    margin-right: 50px;
+    border: solid 1px;
+    border-radius: 5px;
+    position: relative;
+    line-height: 14pt;
+}
+
+.diagnostic_windows {
+    float: left;
+    min-width:400px;
+    max-width:400px;
+}
+
+.diagnostic_windows div::before {
+    content: attr(id) "\a";
+    white-space: pre-wrap;
+    font-weight: bold;
+}
+
+.diagnostic_windows div {
+    height: 200px;
+    border: solid 1px;
+    overflow: auto;
+}
+
+.messages {
+    overflow: auto;
+    height: 85vh;
+}
+
+.usertext {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    border-top: solid 1px;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+    background-color: #efefef;
+}
+
+.usertext textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    height: 15pt;
+    width: 80%;
+    padding: 10px;
+    font: normal 10pt verdana, sans-serif;
+    line-height: 14pt;
+    background-color: inherit;
+}
+
+.usertext textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.usertext input {
+    background-image: url("../img/send-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fafffa;
+    position: relative;
+    top: -2px;
+    width: 10%;
+    height: 25pt;
+    border: none;
+    border-radius: 6px;
+}
+
+.usertext input:hover {
+    background-image: url("../img/send-logo-hover.png");
+    background-color: #d4dfd4;
+}
+
+.agenttext {
+    font: normal 10pt verdana, sans-serif;
+    margin: 10px 20px 10px 10px;    
+    line-height: inherit;
+    overflow: auto;
+    background: #f7f4f1;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.usertextcopy {
+    font: normal 10pt verdana, sans-serif;
+    margin: 10px 10px 10px 20px;    
+    line-height: inherit;
+    text-align: right;
+    background: #f1f4f7;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.agenttext::before {
+    content: attr(agentname) "\a";
+    white-space: pre-wrap;
+    font-weight: bold;
+}
+
+.usertextcopy::before {
+    content: attr(username) "\a";
+    white-space: pre-wrap;
+    font-weight: bold;
+}
