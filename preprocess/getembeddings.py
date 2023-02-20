@@ -91,8 +91,8 @@ class DocsEmbeddings:
 
         df.to_csv(csv_path+file_out)
 
-docs = DocsEmbeddings(r'D:\Users\Zohar\Jobs\IDLWeb\chatbot\etc\objectcoded.ca\.env')
-#docs.SaveModelsAsCsv(r'D:\Users\Zohar\Jobs\IDLWeb\chatbot\etc\objectcoded.ca\models.csv')
-docs.GetEmbeddings(r'D:\Users\Zohar\Jobs\IDLWeb\chatbot\httrack-idlweb\www.idlwebinc.com\\', 'full_site_dataframe.csv', 'full_site_embeddings.csv')
-#docs.DropSavedIndex(r'D:\Users\Zohar\Jobs\IDLWeb\chatbot\httrack-idlweb\www.idlwebinc.com\\', 'full_site_embeddings.csv')
-#docs.SaveVectorMagnitudes(r'D:\Users\Zohar\Jobs\IDLWeb\chatbot\httrack-idlweb\www.idlwebinc.com\\', 'full_site_embeddings.csv', 'full_site_embeddings_w_mags.csv')
+docs = DocsEmbeddings(r'..\..\etc\www.example.com\.env')
+#docs.SaveModelsAsCsv(r'..\..\etc\www.example.com\models.csv')
+docs.GetEmbeddings(r'..\..\etc\www.example.com\\', 'full_site_dataframe.csv', 'full_site_embeddings.csv')
+#docs.DropSavedIndex(r'..\..\etc\www.example.com\\', 'full_site_embeddings.csv')
+#docs.SaveVectorMagnitudes(r'..\..\etc\www.example.com\\', 'full_site_embeddings.csv', 'full_site_embeddings_w_mags.csv')
