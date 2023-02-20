@@ -1,6 +1,6 @@
 from getfiles import DirFiles
 
-dir = 'd:/users/zohar/jobs/idlweb/chatbot/httrack-idlweb/www.idlwebinc.com/'
+dir = '/httrack-idlweb/www.example.com/'
 
 files = DirFiles(dir)
 files.GenFileList('.txt')
